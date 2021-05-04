@@ -1,41 +1,30 @@
 import styles from "./App.module.scss";
-import HeaderLogo from "./starter/logo.png";
-import About1 from "./starter/about-1.jpg";
-import About2 from "./starter/about-2.jpg";
 
-import Galery1 from "./starter/gallery-1.jpg";
-import Galery2 from "./starter/gallery-2.jpg";
-import Galery3 from "./starter/gallery-3.jpg";
+//COMPONENTS
+import Header from "../layout/header/Header.layout"
+import Footer from "../layout/footer/Footer.layout"
 
-import Galery4 from "./starter/gallery-4.jpg";
-import Galery5 from "./starter/gallery-5.jpg";
-import Galery6 from "./starter/gallery-6.jpg";
+//IMAGES
+import About1 from "../starter/about-1.jpg";
+import About2 from "../starter/about-2.jpg";
 
-import Galery7 from "./starter/gallery-7.jpg";
-import Galery8 from "./starter/gallery-8.jpg";
-import Galery9 from "./starter/gallery-9.jpg";
-import BgImg from "./starter/food-delivery.jpg";
+import Galery1 from "../starter/gallery-1.jpg";
+import Galery2 from "../starter/gallery-2.jpg";
+import Galery3 from "../starter/gallery-3.jpg";
+
+import Galery4 from "../starter/gallery-4.jpg";
+import Galery5 from "../starter/gallery-5.jpg";
+import Galery6 from "../starter/gallery-6.jpg";
+
+import Galery7 from "../starter/gallery-7.jpg";
+import Galery8 from "../starter/gallery-8.jpg";
+import Galery9 from "../starter/gallery-9.jpg";
+import BgImg from "../starter/food-delivery.jpg";
 
 const App = () => {
   return (
     <div className={styles.App}>
-      <header className={styles.App_header}>
-        <div className={styles.header_content}>
-          <div>
-            <img
-              src={HeaderLogo}
-              alt="HeaderLogo"
-              className={styles.HeaderLogo}
-            />
-          </div>
-          <div className={styles.navbar}>
-            <ul className={styles.list}>
-              <li>HOME</li>
-              <li>MENU</li>
-            </ul>
-          </div>
-        </div>
-      </header>
+      <Header />
       <main className={styles.App_content}>
         <div className={styles.main_content}>
           <h1>
@@ -168,25 +157,7 @@ const App = () => {
           </div>
         </div>
       </section>
-      <footer>
-      <div  className={styles.footerContent}>
-      <div className={styles.info}>
-        <h1>Useful Links</h1>
-        <p>Home</p>
-        <p>Menu</p>
-      </div>
-      <div className={styles.info}>
-        <h1>Contact Us</h1>
-        <p>100 Tenth Avenue, New York City, NY 1001</p>
-        <p>Phone: (044) 359 0173</p>
-      </div>
-      <div className={styles.info}>
-        <h1>Opening Hours</h1>
-        <p>Monday – Sunday: 5PM – 10PM</p>
-        <p>Tuesday – Friday: 11AM – 2PM</p>
-      </div>
-      </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,21 @@
+footer {
+  margin-top: 100px;
+  .footerContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 55px;
+    padding: 60px 200px;
+    background-color: #242424;
+
+    .info {
+      h1 {
+        color: #fff;
+        font-style: italic;
+        margin-bottom: 30px;
+      }
+      p {
+        color: #717171;
+      }
+    }
+  }
+}
