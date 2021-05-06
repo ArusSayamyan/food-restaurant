@@ -1,0 +1,77 @@
+.menuContent {
+  color: #fff;
+  padding: 240px 40px;
+  width: auto;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../starter/header.jpg");
+  background-size: cover;
+  background-position: center center;
+  text-transform: capitalize;
+  .title {
+    font-size: 5rem;
+    font-style: italic;
+  }
+}
+.promotions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px 50px;
+  margin: 0 auto;
+  grid-gap: 30px 100px;
+  width: 85%;
+
+  .itemsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.378);
+    padding-bottom: 35px;
+  }
+  .firstItem {
+    grid-column: 1 / 3;
+  }
+  .item1 {
+    grid-column: 1 / 3;
+       display: flex;
+    flex-direction: row;
+    img {
+      width: 70px;
+      height: 70px;
+      padding-right: 5px;
+    }
+
+  }
+  h1 {
+    grid-column: 1 / 3;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.378);
+    padding-bottom: 35px;
+    font-style: italic;
+  }
+  .secondItem {
+    grid-column: 1 / 3;
+   
+ 
+  }
+  .item3 {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: row;
+ .brulee {
+     height: 70px;
+     width: 70px;
+     padding-right: 5px;
+ }
+}
+}
+.menuList,
+span {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.description {
+  font-style: italic;
+}
+span {
+  text-align: right;
+}

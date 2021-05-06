@@ -6,8 +6,8 @@ const Footer = () => {
         <div  className={styles.footerContent}>
         <div className={styles.info}>
           <h1>Useful Links</h1>
-          <p>Home</p>
-          <p>Menu</p>
+          <p className="u-cursor--pointer">Home</p>
+          <p className="u-cursor--pointer">Menu</p>
         </div>
         <div className={styles.info}>
           <h1>Contact Us</h1>
