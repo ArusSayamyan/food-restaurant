@@ -1,13 +1,22 @@
 import styles from "./footer.module.scss";
+import {useHistory} from "react-router-dom";
 
 const Footer = () => {
+
+  const history = useHistory();
+  const handleClick = () => {
+    history.push("/menu");
+  };
+  const handleClickHome = () => {
+    history.push("/home");
+  };
     return (
         <footer>
         <div  className={styles.footerContent}>
         <div className={styles.info}>
           <h1>Useful Links</h1>
-          <p className="u-cursor--pointer">Home</p>
-          <p className="u-cursor--pointer">Menu</p>
+          <p className="u-cursor--pointer" onClick={handleClickHome}>Home</p>
+          <p className="u-cursor--pointer" onClick={handleClick}>Menu</p>
         </div>
         <div className={styles.info}>
           <h1>Contact Us</h1>
