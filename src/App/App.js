@@ -7,7 +7,9 @@ import Footer from "../layout/footer/Footer.layout";
 import HomePage from "src/pages/home/Home.page";
 import MenuPage from "src/pages/menu/Menu.page";
 
+
 const App = () => {
+
   return (
     <div className={styles.App}>
       <Header />
@@ -19,6 +21,7 @@ const App = () => {
             <Redirect exact from="/" to="/home" />
           </Switch>
         </div>
+
       </main>
       <Footer />
     </div>
