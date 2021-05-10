@@ -7,10 +7,8 @@ const ReservationModal = (props) => {
             <div className={styles.container}>
             <div className={styles.content}>
             {children}
-            <button onClick={onClose}>Close</button>
             </div>
-          
-
+            <button onClick={onClose} className={styles.close}>Close</button>
         </div>
       )
 

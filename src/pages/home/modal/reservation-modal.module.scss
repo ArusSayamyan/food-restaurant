@@ -6,12 +6,30 @@
     background-color: rgba(0, 0, 0, 0.481);
     overflow: hidden;
     @include mixins.flexCenter;
+    .close{
+     position: absolute;   
+        box-sizing: border-box;
+        right: 300px;
+        top: 38px;
+        font-size: 15px;
+        padding: 10px 15px;
+        background-color: rgba(0, 0, 0, 0.529);
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        cursor: pointer;
+        
+    }
     .content {
         background-color: #fff;
         height: 90%;
         width: 52%;
         border-radius: 4px;
-        padding: 10px 35px;
+        background-image: url("../../../starter/background-2.jpg");
+        background-size: cover;
+        background-position: center center;
+       
+        
 
     }
 }

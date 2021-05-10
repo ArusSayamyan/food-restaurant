@@ -8,6 +8,7 @@ import styles from "./home.module.scss";
 //  import { Route } from "react-router-dom";
 // import { useSelector } from "react-redux";
 import ReservationModal from "src/pages/home/modal/ReservationModal.component";
+import Modal from "./modal/Modal.component";
 import { useState } from "react";
 
 //IMAGES
@@ -37,7 +38,7 @@ const HomePage = () => {
     <div>
       {isModalOpen && (
         <ReservationModal onClose={toggleModal}>
-          <h1>portal</h1>
+          <Modal />
         </ReservationModal>
       )}
       <div className={styles.main_content}>
